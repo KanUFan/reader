@@ -1,0 +1,14 @@
+.preview {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: 
+  "CI IT"
+  "CI IT"
+  "D D";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  @import './__description/preview__description.scss';
+  @import './__image/preview__image.scss';
+  @import './__info/preview__info.scss';
+}

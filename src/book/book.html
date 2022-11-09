@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Читалка</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="box page__box box_fixed_left">
+        <div class="box__contents box_grid">
+          <div class="header box__header_size_l box__header_centre_m-c">Оглавление</div>
+          <div class="content">
+            Глава 1
+          </div>
+        </div>
+      </div>
+      <div class="nav-triple">
+        <input type="button" value="show" class="nav-triple__left">
+        <a href="../menu/index.html">
+          <input type="button" value="up"  class="nav-triple__up">
+        </a>
+        <input type="button" value="show" class="nav-triple__right">
+      </div>
+      <div class="box page__box">
+        <div class="box__text" id="txtcl">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+          libero voluptate veritatis nesciunt! Libero porro reprehenderit autem
+          fugiat alias! Laudantium!</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+            libero voluptate veritatis nesciunt! Libero porro reprehenderit autem
+            fugiat alias! Laudantium!</p>
+        </div>
+      </div>
+      <div class="box page__box box_fixed_right">
+        <div class="box__settings box_grid">
+          <div class="header box__header_size_l box__header_centre_m-c">
+            Настройки
+          </div>
+          <div class="options">
+            <div class="section">
+            <div class="header box__header_size_m box__header_centre_m-c">
+              Вид страницы
+            </div>
+              <div class="parameter">
+                <div class="parameter__name header header_size_s">
+                  Цвет текста
+                </div>
+                <input
+                  type="color"
+                  class="parameter__value"
+                  id="colorText"
+                  value="#ffffff"
+                />
+              </div>
+              <div class="parameter">
+                <div class="parameter__name header header_size_s">
+                  Цвет страницы
+                </div>
+                <input
+                  type="color"
+                  class="parameter__value"
+                  id="colorPage"
+                  value="#525659"
+                />
+              </div>
+              <div class="parameter">
+                <div class="parameter__name header header_size_s">Шрифт</div>
+                <select class="parameter__value" id="fontFamily">
+                  <option value="Roboto, 'Segoe UI', Tahoma, sans-serif">Roboto</option>
+                  <option value="Verdana, Geneva, sans-serif">Verdana</option>
+                  <option value="'Trebuchet MS', 	Arial, sans-serif">Trebuchet MS</option>
+                </select>
+              </div>
+              <div class="parameter">
+                <div class="parameter__name box__header_size_s">Размер шрифта</div>
+                <input type="range" class="parameter__value" id="fontSize" min="6" max="40" step="1" value="16">
+              </div>
+              <div class="parameter">
+                <div class="parameter__name header header_size_s">
+                  Полноэкранный режим
+                </div>
+                <input type="button" class="parameter__value" id="fullWindow" value="no"/>
+              </div>
+            </div>
+            <div class="section">
+            <div class="header box__header_size_m box__header_centre_m-c">
+              Форматирование
+            </div>
+              <div class="parameter">
+                <div class="parameter__name box__header_size_s">Междустрочный интервал</div>
+                <input type="range" class="parameter__value" id="lineHeight" value="30" min="1" max="100" step="1">
+              </div>
+              <div class="parameter">
+                <div class="parameter__name box__header_size_s">Границы горизонтальные</div>
+                <input type="range" class="parameter__value" id="paddingHorizontal" value="0" min="0" max="500" step="10">
+              </div>
+              <div class="parameter">
+                <div class="parameter__name box__header_size_s">Границы вертикальные</div>
+                <input type="range" class="parameter__value" id="paddingVertical" value="0" min="0" max="200" step="10">
+              </div>
+              <div class="parameter">
+                <div class="parameter__name box__header_size_s">Выравнивание текста</div>
+                <select id="textAlign" class="parameter__value">
+                  <option value="left">Слева</option>
+                  <option value="right">Справа</option>
+                  <option value="center">По центру</option>
+                  <option value="justify">По ширине</option>
+                </select>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

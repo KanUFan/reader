@@ -1,0 +1,16 @@
+.nav-triple {
+  width: 210px;
+  height: 70px;
+  position:fixed;
+  top: 0;
+  left: calc(50% - 105px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  opacity: 0.5;
+  &:hover {
+    opacity: 0.8;
+  }
+  @import './__up/nav-triple__up.scss';
+  @import './__left/nav-triple__left.scss';
+  @import './__right/nav-triple__right.scss';
+}

@@ -1,0 +1,17 @@
+@import '../common.blocks/zeroing/zeroing.scss';
+@import '../common.blocks/link/link.scss';
+@import '../common.blocks/tile/tile.scss';
+@import '../common.blocks/preview/preview.scss';
+@import '../common.blocks/page/page.scss';
+@import '../common.blocks/parameter/parameter.scss';
+@import '../common.blocks/box/box.scss';
+@import '../common.blocks/nav-triple/nav-triple.scss';
+
+@font-face {
+  font-family: 'TH3_MACHINE';
+  src: url('./TH3\ MACHINE.ttf') format('ttf');
+}
+
+title {
+  font-family: 'TH3_MACHINE';
+}

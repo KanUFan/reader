@@ -1,0 +1,40 @@
+.nav-triple {
+  width: 210px;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: calc(50% - 105px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  opacity: 0.5;
+}
+.nav-triple:hover {
+  opacity: 0.8;
+}
+.nav-triple__up {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(50, 54, 57);
+  color: white;
+}
+.nav-triple__up:hover {
+  background-color: rgb(42, 46, 49);
+}
+.nav-triple__left {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(50, 54, 57);
+  color: white;
+}
+.nav-triple__left:hover {
+  background-color: rgb(42, 46, 49);
+}
+.nav-triple__right {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(50, 54, 57);
+  color: white;
+}
+.nav-triple__right:hover {
+  background-color: rgb(42, 46, 49);
+}/*# sourceMappingURL=nav-triple.css.map */

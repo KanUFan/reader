@@ -1,0 +1,46 @@
+.tile {
+  width: 150px;
+  height: 150px;
+  margin: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.tile__image {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.tile__image img {
+  width: 100%;
+  height: 140px;
+}
+.tile__name {
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tile__label {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.tile__label:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=tile.css.map */

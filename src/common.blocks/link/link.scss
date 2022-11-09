@@ -1,0 +1,13 @@
+.link {
+  text-decoration: none;
+  transition: color .1s ease-out;
+}
+
+.link:link, .link:visited {
+  color:white;
+}
+
+.link:hover {
+  color:hsl(34, 90%, 68%);
+}
+

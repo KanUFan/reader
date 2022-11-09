@@ -1,0 +1,10 @@
+&__cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  background-color: rgb(11, 11, 11);
+  border: 1px solid rgb(130, 130, 130);
+  @import './_small/info-table__cell_small.scss';
+  @import './_big/info-table__cell_big.scss';
+}

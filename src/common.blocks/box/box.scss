@@ -1,0 +1,13 @@
+.box {
+  background-color: rgb(50, 54, 57);
+  height: 100%;
+  box-shadow: 0 -2px 8px rgb(0 0 0 / 9%), 0 4px 8px rgb(0 0 0 / 6%), 0 1px 2px rgb(0 0 0 / 30%), 0 2px 6px rgb(0 0 0 / 15%);
+  // @import '__contents/box__contents.scss';
+  @import '__content/box__content.scss';
+  @import '__text/box__text.scss';
+  // @import '__settings/box__settings.scss';
+  @import '_fixed_left/box_fixed_left.scss';
+  @import '_fixed_right/box_fixed_right.scss';
+  @import '_grid/box_grid.scss';
+  @import '__header/box__header.scss';
+}

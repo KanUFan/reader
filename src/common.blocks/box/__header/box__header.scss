@@ -1,0 +1,7 @@
+&__header {
+  width: 100%;
+  @import './_size_l/box__header_size_l.scss';
+  @import './_size_m/box__header_size_m.scss';
+  @import './_size_s/box__header_size_s.scss';
+  @import './_centre_m-c/box__header_cente_m-c.scss';
+}

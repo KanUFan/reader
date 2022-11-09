@@ -1,0 +1,14 @@
+.tile {
+  width: 150px;
+  height: 150px;
+  margin: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  user-select: none;
+  @import './__image/tile__image.scss';
+  @import './__name/tile__name.scss';
+  @import './__label/tile__label.scss';
+}
