@@ -1,0 +1,19 @@
+.box__tabPreview {
+  color: white;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  user-select: none;
+
+  &:hover {
+    background-color: rgb(40, 44, 47);
+  }
+  
+  &:active {
+    background-color: rgb(30, 34, 37);
+  }
+}

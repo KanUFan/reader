@@ -1,0 +1,40 @@
+@import '../../common.blocks/zeroing/zeroing';
+@import '../../scss/variables';
+
+@import '../../common.blocks/page/page';
+@import '../../common.blocks/page/_grid/page_grid';
+
+
+
+@import '../../common.blocks/tile/tile';
+@import '../../common.blocks/parameter/parameter';
+@import '../../common.blocks/input/input';
+
+
+@import '../../common.blocks/box/box';
+@import '../../common.blocks/box/__content/box__content';
+@import '../../common.blocks/box/__content/_flex/box__content_flex';
+@import '../../common.blocks/box/__text/box__text';
+@import '../../common.blocks/box/_grid/box_grid';
+@import '../../common.blocks/box/__header/box__header';
+@import '../../common.blocks/box/__header/_size_l/box__header_size_l.scss';
+@import '../../common.blocks/box/__header/_size_m/box__header_size_m.scss';
+@import '../../common.blocks/box/__header/_size_s/box__header_size_s.scss';
+@import '../../common.blocks/box/__header/_centre_m-c/box__header_cente_m-c.scss';
+@import '../../common.blocks/box/__tab/box__tab.scss';
+@import '../../common.blocks/box/__tabPreview/box__tabPreview.scss';
+@import '../../common.blocks/box/__button/box__button.scss';
+@import '../../common.blocks/box/__search/box__search.scss';
+@import '../../common.blocks/box/__toolbar/box__toolbar.scss';
+@import '../../common.blocks/box/__input-file/box__input-file.scss';
+@import '../../common.blocks/box/__label-file/box__label-file.scss';
+
+
+@import '../../common.blocks/preview/preview';
+@import '../../common.blocks/preview/__description/preview__description';
+@import '../../common.blocks/preview/__image/preview__image';
+@import '../../common.blocks/preview/__info/preview__info';
+
+.vertical-square {
+  font-size: 1.2rem;
+}

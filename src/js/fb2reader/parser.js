@@ -55,19 +55,28 @@ let FB2Reader = {
 
   fillLibrary(event) {
     let file = this.getFileFromInput(event)
-    let book = this.getBookFromFile(file)
+    let store = getObjectStore(DB_STORE_NAME, 'readwrite')
+    let obj = {name: file.name, size: file.size}
+    let request = store.add(obj)
+    request.onsuccess = function() {
+      console.log('Success');
+    }
+    request.onerror = function() {
+      console.log('error');
+    }
+    // let book = this.getBookFromFile(file)
 
-    book.then((result) => {
-      let coverpage = this.getBookCoverpage(result)
-      let bookTitle = this.getBookTitle(result)
-      this.addBookToLibrary(coverpage, bookTitle)
-    })
+    // book.then((result) => {
+    //   let coverpage = this.getBookCoverpage(result)
+    //   let bookTitle = this.getBookTitle(result)
+    //   this.addBookToLibrary(coverpage, bookTitle)
+    // })
   },
 
   fillDescription(event) {
     let file = this.getFileFromInput(event)
     let book = this.getBookFromFile(file)
-
+    const elementHeights = []
     book.then((result) => {
       document.querySelector("#genre").textContent = this.getGenre(result)
     })
@@ -83,8 +92,10 @@ let FB2Reader = {
     let authorSite = document.querySelector("#author")
     authorSite.textContent = ""
     for (let author of authorFile.values()) {
+      var text = "string"
       authorSite.textContent += author.textContent
     }
+    const body = document
   },
 
   getAnnotation(book) {
@@ -99,3 +110,34 @@ let FB2Reader = {
     dateSite.textContent = dateFile.textContent
   },
 }
+
+let db
+const DB_NAME = "readerDB"
+const DB_VERSION = 1
+const DB_STORE_NAME = "library"
+
+function openDB() {
+  let req = indexedDB.open(DB_NAME, DB_VERSION)
+
+  req.onsuccess = function () {
+    db = req.result
+  }
+
+  req.onerror = function (event) {
+    console.error("openDB:", event.target.errorCode)
+  }
+
+  req.onupgradeneeded = function (event) {
+    let store = event.currentTarget.result.createObjectStore(
+      DB_STORE_NAME, 
+      {keyPath: "name",}
+    )
+  }
+}
+
+function getObjectStore(storeName, mode) {
+  let tx = db.transaction(storeName, mode)
+  return tx.objectStore(storeName)
+}
+
+openDB()

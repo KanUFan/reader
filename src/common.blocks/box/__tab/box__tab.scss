@@ -1,0 +1,8 @@
+.box__tab {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(50, 54, 57);
+  visibility: hidden;
+}

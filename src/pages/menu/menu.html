@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="menu.css" />
+    <title>Читалка</title>
+  </head>
+  <body class="page page_grid">
+    <section class="box box_grid">
+      <h1 class="box__header box__header_size_l box__header_centre_m-c">
+        <span class="vertical-square">&#9672;&nbsp;</span> 
+        Библиотека
+        <span class="vertical-square">&nbsp;&#9672;</span>
+      </h1>
+      <div class="box__toolbar">
+        <input
+          type="file"
+          name="file"
+          id="file-input"
+          class="box__input-file"
+          accept=".fb2"
+        />
+        <label for="file-input" class="box__label-file">
+          <span class="box__label-file-icon">
+            <img src="folder.png" alt="?" style="width: 1.5rem;">
+          </span>
+          <span class="box__label-file-text">Загрузить книгу</span>
+        </label>
+        <input
+          class="box__search"
+          type="search"
+          name="q"
+          id="bookSearch"
+          placeholder="Название"
+          autocomplete="off"
+        />
+      </div>
+      <div class="box__content box__content_flex">
+      </div>
+    </section>
+    <section class="box box_grid">
+      <h1 class="box__header box__header_size_l box__header_centre_m-c">
+        <span class="vertical-square">&#9672;&nbsp;</span>
+        Книга
+        <span class="vertical-square">&nbsp;&#9672;</span>
+      </h1>
+      <div class="box__tab">
+        <button class="box__tabPreview"><h2>Кратко</h2></button>
+        <button class="box__tabPreview"><h2>Детально</h2></button>
+        <button class="box__tabPreview"><h2>Анализ</h2></button>
+      </div>
+      <div class="box__content">
+        <div class="preview">
+          <div class="preview__image">
+            <img src="book-cover.png" alt="?" style="width: 100px;">
+            <a href="../book/index.html" class="link"></a>
+          </div>
+          <div class="preview__description">
+            <img src="justify-paragraph.png" alt="?" style="width: 100px;">
+          </div>
+          <div class="preview__info">
+            <img src="list.png" alt="?" style="width: 100px;">
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="menu.bundle.js"></script>
+</html>

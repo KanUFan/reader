@@ -1,0 +1,15 @@
+.box__button {
+  height: 40px;
+  width: 100px;
+  background-color: rgb(40, 44, 47);
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(30, 34, 37);
+  }
+  
+  &:active {
+    background-color: rgb(20, 24, 27);
+  }
+}

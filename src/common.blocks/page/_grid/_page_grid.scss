@@ -1,0 +1,11 @@
+.page_grid {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+
+  grid-template: {
+    columns: 1fr 1fr;
+    rows: 100%;
+  }
+}
